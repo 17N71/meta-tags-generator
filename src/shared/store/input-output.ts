@@ -6,7 +6,7 @@ type State = {
   isGenerating?: boolean;
 };
 
-const store = create<State>(state => ({
+const store = create<State>(() => ({
   code: undefined,
   isGenerating: false
 }));
