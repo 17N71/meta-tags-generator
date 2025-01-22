@@ -7,10 +7,10 @@ import { createHighlighter } from "shiki"
 import type { BundledLanguage } from 'shiki/bundle/web'
 import { twMerge } from "tailwind-merge"
 import { unified } from "unified"
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
-
 
 export async function highlightCode(code: string, lang:BundledLanguage) {
   const file = await unified()
@@ -32,11 +32,11 @@ export async function highlightCode(code: string, lang:BundledLanguage) {
 export const parseToCode = async (code: string, lang: BundledLanguage) =>{
   const file = await unified()
   .use(remarkParse)
-  .use(transformerCopyButton)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  .use(transformerCopyButton as any)
   .use(rehypePrettyCode, {
     // See Options section below.
   })
-  .use(rehypeStringify)
   .process(code);
   
   const  highlighter =( await createHighlighter({langs: ['tsx', 'ts', 'jsx', 'js', 'javascript', 'typescript'],
