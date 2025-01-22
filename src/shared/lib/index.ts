@@ -1,19 +1,12 @@
-import { clsx, type ClassValue } from "clsx"
-import { twMerge } from "tailwind-merge"
-import type { JSX } from 'react'
-import type { BundledLanguage } from 'shiki/bundle/web'
-import { toJsxRuntime } from 'hast-util-to-jsx-runtime'
-import { Fragment } from 'react'
-import { jsx, jsxs } from 'react/jsx-runtime'
-import { codeToHast } from 'shiki/bundle/web'
-import { transformerColorizedBrackets } from "@shikijs/colorized-brackets"
 import { transformerCopyButton } from '@rehype-pretty/transformers'
-import { codeToHtml, createHighlighter } from "shiki"
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
-import rehypePrettyCode from "rehype-pretty-code";
+import { clsx, type ClassValue } from "clsx"
+import rehypePrettyCode from "rehype-pretty-code"
+import remarkParse from "remark-parse"
+import remarkRehype from "remark-rehype"
+import { createHighlighter } from "shiki"
+import type { BundledLanguage } from 'shiki/bundle/web'
+import { twMerge } from "tailwind-merge"
+import { unified } from "unified"
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }

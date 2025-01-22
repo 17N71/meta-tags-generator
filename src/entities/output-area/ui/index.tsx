@@ -1,5 +1,6 @@
 'use client'
 import { useAtomValue } from 'jotai'
+import { CodeBlock } from "~/components/ui/code-block"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/shared/components/ui/card"
 import { inputOutputState } from "~/shared/store/input-output"
 
@@ -21,11 +22,8 @@ export function OutputArea() {
 				</div>
 			</CardHeader>
 			<CardContent className="p-0">
-				<div className="p-4 font-mono text-sm  rounded-b-lg">
-					<div
-						className="text-zinc-100 space-y-2"
-						dangerouslySetInnerHTML={{ __html: code! }}
-					/>
+				<div className="p-4 font-mono text-sm rounded-b-lg">
+					<CodeBlock filename="meta.ts" language="tsx" code={code!} />
 				</div>
 			</CardContent>
 		</Card>

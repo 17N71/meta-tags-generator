@@ -13,7 +13,7 @@ import {
 } from "~/shared/components/ui/alert";
 import { AlertCircle, CheckCircle2 } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "~/shared/components/ui/card";
-import { highlightCode } from "~/shared/lib";
+// import { highlightCode } from "~/shared/lib";
 
 export function InputArea() {
 	const [, setInput] = useAtom(inputOutputState);
@@ -27,10 +27,10 @@ export function InputArea() {
 	});
 
 	const onSubmit: SubmitHandler<InputFormValuesType> = async (data) => {
-		const code = await highlightCode(data.code, 'tsx')
+		// const code = await highlightCode(data.code, 'tsx')
 		setInput(() => ({
 			isGenerating: false,
-			code,
+			code: data.code,
 		}));
 	};
 
