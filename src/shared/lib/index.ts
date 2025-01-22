@@ -24,7 +24,6 @@ export async function highlightCode(code: string, lang:BundledLanguage) {
         }),
       ],
     })
-    .use(rehypeStringify)
     .process(`\`\`\`${lang}\n${code}\n\`\`\``);
 
   return String(file);
