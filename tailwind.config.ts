@@ -5,13 +5,23 @@ export default {
     darkMode: ["class"],
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/shared/ui/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/entities/ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/shared/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/widgets/*/ui/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/entities/*/ui/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {
   		colors: {
+				scrollbar: {
+          thumb: {
+            bg: "rgb(107 114 128)", // neutral-500
+            hover: "rgb(75 85 99)", // neutral-600
+          },
+          track: {
+            bg: "rgb(229 231 235)", // neutral-200
+          },
+        },
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -53,6 +63,9 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+			fontFamily: {
+				sans:['Inter']
+			},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',

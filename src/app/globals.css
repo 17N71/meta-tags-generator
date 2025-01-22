@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  @apply font-sans scroll-smooth;
 }
 
 @layer base {
@@ -70,3 +76,119 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Default scrollbar styling for light and dark modes */
+::-webkit-scrollbar {
+  width: 10px; /* Adjust the width as needed */
+  height: 10px; /* For horizontal scrollbars */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(
+    --scrollbar-thumb-bg,
+    rgb(107 114 128)
+  ); /* Default to neutral-500 */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(
+    --scrollbar-thumb-hover-bg,
+    rgb(75 85 99)
+  ); /* Hover to neutral-600 */
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(
+    --scrollbar-track-bg,
+    rgb(229 231 235)
+  ); /* Default to neutral-200 */
+  border-radius: 8px;
+}
+
+.dark::-webkit-scrollbar-thumb {
+  background-color: var(
+    --scrollbar-thumb-bg,
+    rgb(75 85 99)
+  ); /* Dark mode neutral-600 */
+}
+
+.dark::-webkit-scrollbar-track {
+  background-color: var(
+    --scrollbar-track-bg,
+    rgb(31 41 55)
+  ); /* Dark mode neutral-800 */
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.shiki,
+[data-rehype-pretty-code-figure] > pre > code {
+  padding: 40px 30px 15px 15px;
+}
+pre button.rehype-pretty-copy {
+  right: 0 !important;
+  margin: 4px 4px 0 0 !important;
+  top: 0 !important;
+}
+.shiki,
+[data-rehype-pretty-code-figure] > pre > code {
+  overflow: auto;
+}
+/* 
+pre:has(code) {
+  position: relative;
+}
+
+pre button.copy {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  height: 28px;
+  width: 28px;
+  padding: 0;
+  display: flex;
+
+  & span {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  & .ready {
+    background-image: url(/icons/copy.svg);
+  }
+
+  & .success {
+    display: none;
+    background-image: url(/icons/copy-success.svg);
+  }
+
+  &.copied {
+    & .success {
+      display: block;
+    }
+
+    & .ready {
+      display: none;
+    }
+  }
+} */
