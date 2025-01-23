@@ -19,7 +19,7 @@
     "*.{js,jsx,ts,tsx,json,css,scss,md}": [
       "prettier --write",
       "eslint --fix",
-      "next build"
+      "bun run build"
     ]
   },
   "dependencies": {
