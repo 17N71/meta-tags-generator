@@ -2,9 +2,9 @@ import { transformerCopyButton } from "@rehype-pretty/transformers";
 import { codeToHtml } from "shiki";
 import { twMerge } from "tailwind-merge";
 import { highlightProps } from "../types";
-import { clsx } from "clsx";
+import { clsx, type ClassValue } from "clsx";
 
-export function cn(...inputs: string[]) {
+export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 

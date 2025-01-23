@@ -12,7 +12,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle
-} from "~/shared/components/ui/card";
+} from "~/shared/components/ui/card.tsx";
 import { Textarea } from "~/shared/components/ui/textarea";
 import { highlight } from "~/shared/lib";
 import { inputOutputState } from "~/shared/store/input-output";
