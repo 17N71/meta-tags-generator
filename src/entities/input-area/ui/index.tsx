@@ -3,7 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAtom } from "jotai";
 import { AlertCircle } from "lucide-react";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { type SubmitHandler, useForm } from "react-hook-form";
 import { Alert, AlertDescription } from "~/shared/components/ui/alert";
 import { Button } from "~/shared/components/ui/button";
 import {
@@ -12,7 +12,7 @@ import {
   CardDescription,
   CardHeader,
   CardTitle
-} from "~/shared/components/ui/card.tsx";
+} from "~/shared/components/ui/card";
 import { Textarea } from "~/shared/components/ui/textarea";
 import { highlight } from "~/shared/lib";
 import { inputOutputState } from "~/shared/store/input-output";

@@ -7,13 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write .",
+    "formatter:fix": "prettier --write ./src",
     "prepare": "husky"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -45,6 +40,8 @@
     "rehype-stringify": "^10.0.1",
     "remark-parse": "^11.0.0",
     "remark-rehype": "^11.1.1",
+    "shiki": "^2.1.0",
+    "shiki-transformer-copy-button": "^0.0.3",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.24.1",
@@ -62,8 +59,6 @@
     "lint-staged": "^15.4.1",
     "postcss": "^8",
     "prettierrc": "^0.0.0-5",
-    "shiki": "^2.0.3",
-    "shiki-transformer-copy-button": "^0.0.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
