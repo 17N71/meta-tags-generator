@@ -1,8 +1,9 @@
 import { atomWithStore } from "jotai-zustand";
+import { JSX } from "react";
 import { create } from "zustand";
 
 type State = {
-  code?: string;
+  code?: string | JSX.Element;
   isGenerating?: boolean;
 };
 

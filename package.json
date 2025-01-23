@@ -7,18 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ./src",
+    "format": "prettier --write .",
     "prepare": "husky"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "prettier --write ./src",
-      "eslint --max-warnings 0 ./src"
-    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-slot": "^1.1.1",
+    "@radix-ui/react-tabs": "^1.1.2",
     "@rehype-pretty/transformers": "^0.13.2",
     "@shikijs/colorized-brackets": "^1.27.2",
     "alert": "^6.0.2",
@@ -50,6 +45,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
+    "git-format-staged": "^3.1.1",
     "husky": "^9.1.7",
     "lint-staged": "^15.4.1",
     "postcss": "^8",
