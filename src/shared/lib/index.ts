@@ -1,5 +1,5 @@
 import { transformerCopyButton } from '@rehype-pretty/transformers'
-import { clsx, type ClassValue } from "clsx"
+import { type ClassValue, clsx } from "clsx"
 import { codeToHtml } from "shiki"
 import { twMerge } from "tailwind-merge"
 import { highlightProps } from "../types"
