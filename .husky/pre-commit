@@ -1,5 +1,0 @@
-bun run formatter:fix
-
-bun run lint
-
-next build
