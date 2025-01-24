@@ -2,4 +2,4 @@ bun run formatter:fix
 
 bun run lint
 
-bun run build
+next build
