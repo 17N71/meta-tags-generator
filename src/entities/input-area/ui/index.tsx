@@ -17,6 +17,7 @@ import { Textarea } from "~/shared/components/ui/textarea";
 import { highlight } from "~/shared/lib";
 import { inputOutputState } from "~/shared/store/input-output";
 import { InputFormValues, InputFormValuesType } from "../model/schema";
+import { useForm, type SubmitHandler } from "react-hook-form";
 
 export function InputArea() {
   const [, setInput] = useAtom(inputOutputState);
