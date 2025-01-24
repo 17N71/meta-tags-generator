@@ -3,7 +3,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAtom } from "jotai";
 import { AlertCircle } from "lucide-react";
-import { type SubmitHandler, useForm } from "react-hook-form";
 import { Alert, AlertDescription } from "~/shared/components/ui/alert";
 import { Button } from "~/shared/components/ui/button";
 import {
