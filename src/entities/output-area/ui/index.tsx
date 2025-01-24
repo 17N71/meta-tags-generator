@@ -7,7 +7,7 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from "~/shared/components/ui/card";
 import { Code } from "~/shared/components/ui/code";
 import { inputOutputState } from "~/shared/store/input-output";

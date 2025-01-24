@@ -13,7 +13,7 @@ const validateMetaTags = (input: string) => {
   // Split tags while preserving whitespace within attributes
   const tags = content
     .split(/(?=<meta|<title)/)
-    .map(tag => tag.trim())
+    .map((tag) => tag.trim())
     .filter(Boolean);
 
   for (const tag of tags) {
@@ -48,9 +48,9 @@ export const InputFormValues = z.object({
   code: z
     .string()
     .min(1, "Input cannot be empty")
-    .refine(val => validateMetaTags(val), {
-      message: "Invalid meta tags format. Please check your HTML structure."
-    })
+    .refine((val) => validateMetaTags(val), {
+      message: "Invalid meta tags format. Please check your HTML structure.",
+    }),
 });
 
 export type InputFormValuesType = z.infer<typeof InputFormValues>;

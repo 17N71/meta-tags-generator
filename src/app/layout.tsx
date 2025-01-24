@@ -9,26 +9,20 @@ const inter = Inter({
   weight: ["300", "400", "500", "600", "700", "800"],
   preload: true,
   subsets: ["cyrillic", "latin", "latin-ext", "greek"],
-  variable: '--font-inter'
-})
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "Meta tags generator",
-  description: "Generator for meta tags especially for next.js"
+  description: "Generator for meta tags especially for next.js",
 };
 
-export default function RootLayout({
-  children
-}: PropsWithChildren) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en" className="dark">
-      <body
-        className={`${inter.variable} antialiased`}
-      >
+      <body className={`${inter.variable} antialiased`}>
         <Header />
-        <LayoutBase className="mt-4">
-          {children}
-        </LayoutBase>
+        <LayoutBase className="mt-4">{children}</LayoutBase>
       </body>
     </html>
   );

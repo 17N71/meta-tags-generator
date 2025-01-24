@@ -11,7 +11,7 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
+  CardTitle,
 } from "~/shared/components/ui/card";
 import { Textarea } from "~/shared/components/ui/textarea";
 import { highlight } from "~/shared/lib";
@@ -25,19 +25,19 @@ export function InputArea() {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm<InputFormValuesType>({
-    resolver: zodResolver(InputFormValues)
+    resolver: zodResolver(InputFormValues),
   });
 
-  const onSubmit: SubmitHandler<InputFormValuesType> = async data => {
+  const onSubmit: SubmitHandler<InputFormValuesType> = async (data) => {
     const code = await highlight({
       code: data.code,
-      lang: "ts"
+      lang: "ts",
     });
     setInput(() => ({
       isGenerating: false,
-      code
+      code,
     }));
   };
 

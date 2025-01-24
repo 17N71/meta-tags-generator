@@ -14,11 +14,13 @@ export const CodeBlock = ({
   const [copied, setCopied] = React.useState(false);
   const [activeTab, setActiveTab] = React.useState(0);
   const tabsExist = tabs.length > 0;
-  const [styleCss,] = useState(async () => {
-    const theme = await (await import('react-syntax-highlighter/dist/cjs/styles/prism'))
+  const [styleCss] = useState(async () => {
+    const theme = await await import(
+      "react-syntax-highlighter/dist/cjs/styles/prism"
+    );
 
-    return await theme
-  })
+    return await theme;
+  });
   const copyToClipboard = async () => {
     const textToCopy = tabsExist ? tabs[activeTab].code : code;
     if (textToCopy) {
@@ -27,7 +29,7 @@ export const CodeBlock = ({
       setTimeout(() => setCopied(false), 2000);
     }
   };
-  console.log('styleCss', styleCss)
+  console.log("styleCss", styleCss);
   const activeCode = tabsExist ? tabs[activeTab].code : code;
   const activeLanguage = tabsExist
     ? tabs[activeTab].language || language
@@ -45,10 +47,11 @@ export const CodeBlock = ({
               <button
                 key={index}
                 onClick={() => setActiveTab(index)}
-                className={`px-3 !py-2 text-xs transition-colors font-sans ${activeTab === index
-                  ? "text-white"
-                  : "text-zinc-400 hover:text-zinc-200"
-                  }`}
+                className={`px-3 !py-2 text-xs transition-colors font-sans ${
+                  activeTab === index
+                    ? "text-white"
+                    : "text-zinc-400 hover:text-zinc-200"
+                }`}
               >
                 {tab.name}
               </button>

@@ -9,7 +9,7 @@ type State = {
 
 const store = create<State>(() => ({
   code: undefined,
-  isGenerating: false
+  isGenerating: false,
 }));
 
 export const inputOutputState = atomWithStore(store);

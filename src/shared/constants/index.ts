@@ -5,72 +5,72 @@ export const themes = [
   {
     name: "catppuccin-frappe",
     displayName: "Catppuccin Frappé",
-    hash: "Anhq8s8gdo"
+    hash: "Anhq8s8gdo",
   },
   {
     name: "catppuccin-latte",
     displayName: "Catppuccin Latte",
-    hash: "BSNMoQJVa8"
+    hash: "BSNMoQJVa8",
   },
   {
     name: "catppuccin-macchiato",
     displayName: "Catppuccin Macchiato",
-    hash: "d31Qj1B5Me"
+    hash: "d31Qj1B5Me",
   },
   {
     name: "catppuccin-mocha",
     displayName: "Catppuccin Mocha",
-    hash: "fJyJfbcB2s"
+    hash: "fJyJfbcB2s",
   },
   { name: "dark-plus", displayName: "Dark Plus", hash: "JfxQsrbnYK" },
   { name: "dracula", displayName: "Dracula Theme", hash: "pOvFLQfPdQ" },
   {
     name: "dracula-soft",
     displayName: "Dracula Theme Soft",
-    hash: "Ndeo847sgy"
+    hash: "Ndeo847sgy",
   },
   {
     name: "everforest-dark",
     displayName: "Everforest Dark",
-    hash: "XUhzxsftG3"
+    hash: "XUhzxsftG3",
   },
   {
     name: "everforest-light",
     displayName: "Everforest Light",
-    hash: "rqIYc3XGjL"
+    hash: "rqIYc3XGjL",
   },
   { name: "github-dark", displayName: "GitHub Dark", hash: "An7fa11DAv" },
   {
     name: "github-dark-default",
     displayName: "GitHub Dark Default",
-    hash: "y485Qj7GHR"
+    hash: "y485Qj7GHR",
   },
   {
     name: "github-dark-dimmed",
     displayName: "GitHub Dark Dimmed",
-    hash: "6b8bTiUSB7"
+    hash: "6b8bTiUSB7",
   },
   {
     name: "github-dark-high-contrast",
     displayName: "GitHub Dark High Contrast",
-    hash: "CLaQ3Pd72n"
+    hash: "CLaQ3Pd72n",
   },
   { name: "github-light", displayName: "GitHub Light", hash: "hWLYAC2Hok" },
   {
     name: "github-light-default",
     displayName: "GitHub Light Default",
-    hash: "Jb4SQoxqgj"
+    hash: "Jb4SQoxqgj",
   },
   {
     name: "github-light-high-contrast",
     displayName: "GitHub Light High Contrast",
-    hash: "l0z44uRwF4"
+    hash: "l0z44uRwF4",
   },
   { name: "houston", displayName: "Houston", hash: "Tl8cxYEnjR" },
   {
     name: "kanagawa-dragon",
     displayName: "Kanagawa Dragon",
-    hash: "HadlWHBhkl"
+    hash: "HadlWHBhkl",
   },
   { name: "kanagawa-lotus", displayName: "Kanagawa Lotus", hash: "mrox9djfNi" },
   { name: "kanagawa-wave", displayName: "Kanagawa Wave", hash: "89oI1ZOWnA" },
@@ -80,22 +80,22 @@ export const themes = [
   {
     name: "material-theme-darker",
     displayName: "Material Theme Darker",
-    hash: "pzXIf5kkLP"
+    hash: "pzXIf5kkLP",
   },
   {
     name: "material-theme-lighter",
     displayName: "Material Theme Lighter",
-    hash: "GFHjY5bfXJ"
+    hash: "GFHjY5bfXJ",
   },
   {
     name: "material-theme-ocean",
     displayName: "Material Theme Ocean",
-    hash: "oGNhhMu0Pu"
+    hash: "oGNhhMu0Pu",
   },
   {
     name: "material-theme-palenight",
     displayName: "Material Theme Palenight",
-    hash: "mUFOBKfkFM"
+    hash: "mUFOBKfkFM",
   },
   { name: "min-dark", displayName: "Min Dark", hash: "MGWafaHcrm" },
   { name: "min-light", displayName: "Min Light", hash: "HLbZfJ85nb" },
@@ -117,12 +117,12 @@ export const themes = [
   {
     name: "solarized-light",
     displayName: "Solarized Light",
-    hash: "nEwPcN9uOG"
+    hash: "nEwPcN9uOG",
   },
   { name: "synthwave-84", displayName: "Synthwave '84", hash: "Tfj1HvLGE9" },
   { name: "tokyo-night", displayName: "Tokyo Night", hash: "mJ4ysNsd2O" },
   { name: "vesper", displayName: "Vesper", hash: "ztf14PeQsu" },
   { name: "vitesse-black", displayName: "Vitesse Black", hash: "QTaSMwtu5s" },
   { name: "vitesse-dark", displayName: "Vitesse Dark", hash: "q5xFZxFGnQ" },
-  { name: "vitesse-light", displayName: "Vitesse Light", hash: "mqhRpZKkV3" }
+  { name: "vitesse-light", displayName: "Vitesse Light", hash: "mqhRpZKkV3" },
 ] as const;

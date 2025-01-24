@@ -5,10 +5,10 @@ import CodeLoading from "~/shared/components/loading";
 export const dynamic = "force-dynamic";
 
 const LazyInput = lazy(
-  async () => (await import("~/entities/input-area/ui")).InputArea
+  async () => (await import("~/entities/input-area/ui")).InputArea,
 );
 const LazyOutput = lazy(
-  async () => (await import("~/entities/output-area/ui")).OutputArea
+  async () => (await import("~/entities/output-area/ui")).OutputArea,
 );
 
 export default async function Home() {

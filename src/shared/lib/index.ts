@@ -11,7 +11,7 @@ export function cn(...inputs: ClassValue[]) {
 export async function highlight({
   code,
   lang,
-  theme = "night-owl"
+  theme = "night-owl",
 }: highlightProps) {
   const out = await codeToHtml(code, {
     lang,
@@ -19,9 +19,9 @@ export async function highlight({
     transformers: [
       transformerCopyButton({
         visibility: "always",
-        feedbackDuration: 3_000
-      })
-    ]
+        feedbackDuration: 3_000,
+      }),
+    ],
   });
 
   return out;
